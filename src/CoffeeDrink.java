@@ -2,15 +2,15 @@
 
 class CoffeeDrink {
 
-    int numberOfCups;
-    String flavor;
-    boolean hasWhippedCream;
+    private int numberOfCups;
+    private String flavor;
+    private boolean hasWhippedCream;
 
     // Constructor for CoffeeDrink class
-    public CoffeeDrink(int numberOfCups, String flavor, boolean hasWhippedCream) {
-        this.numberOfCups = numberOfCups;
-        this.flavor = flavor;
-        this.hasWhippedCream = hasWhippedCream;
+    public CoffeeDrink() {
+        this.numberOfCups = 1;
+        this.flavor = "flavor";
+        this.hasWhippedCream = false;
     }
 
     // Method to print information about the CoffeeDrink
@@ -38,7 +38,7 @@ class CoffeeDrink {
         return flavor;
     }
 
-    public boolean isHasWhippedCream() {
+    public boolean getHasWhippedCream() {
         return hasWhippedCream;
     }
 }

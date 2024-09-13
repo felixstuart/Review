@@ -40,9 +40,18 @@ public class JavaBeansAndBytes {
         countCups();
         baristasChoice();
 
-        CoffeeDrink latte = new CoffeeDrink(4, "Latte", false);
-        CoffeeDrink PumpkinSpice = new CoffeeDrink(1, "Pumpkin", true);
+        CoffeeDrink latte = new CoffeeDrink();
+        CoffeeDrink PumpkinSpice = new CoffeeDrink();
 
+
+        PumpkinSpice.setFlavor("Pumpkin Spice");
+        PumpkinSpice.setHasWhippedCream(true);
+        PumpkinSpice.setNumberOfCups(3);
+
+        System.out.println(PumpkinSpice.getFlavor());
+        System.out.println(PumpkinSpice.getNumberOfCups());
+        System.out.println(PumpkinSpice.getHasWhippedCream());
+        
         latte.printInfo();
         PumpkinSpice.printInfo();
     }
